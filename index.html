@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Odin | Rock, paper, scissors</title>
+</head>
+<body>
+  <div class="game">
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="heading-primary header__heading">Rock, paper, scissors</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main__container">
+        <div class="scores">
+          <p class="scores__player">Player score: <span class="js-player-score">0</span></p>
+          <p class="scores__computer">Computer score: <span class="js-computer-score">0</span></p>
+        </div>
+        <div class="announcements">
+          <p class="announcements__winner js-round-winner">Idk</p>
+          <div class="announcements__choices-wrapper">
+            <img src="./images/paper.svg" alt="paper" class="announcements__choice js-player-choice">
+            <span>vs</span>
+            <img src="./images/paper.svg" alt="paper" class="announcements__choice js-computer-choice">
+          </div>
+        </div>
+        <div class="controls">
+          <p class="controls__text">Choose your move. Rock, paper or scissors?</p>
+          <div class="controls__wrapper">
+            <button class="button controls__button">Rock</button>
+            <button class="button controls__button">Paper</button>
+            <button class="button controls__button">Scissors</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

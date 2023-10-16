@@ -59,6 +59,11 @@ body {
   text-transform: uppercase;
 }
 
+.announcements__choice {
+  width: 100px;
+  height: auto;
+}
+
 .announcements__choices-wrapper {
   display: flex;
   align-items: center;

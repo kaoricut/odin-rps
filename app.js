@@ -71,6 +71,9 @@ function restartUI() {
   playerScoreUI.textContent = playerScore;
   const computerScoreUI = document.querySelector(".js-computer-score");
   computerScoreUI.textContent = computerScore;
+  const winnerAnnouncement = document.querySelector(".js-round-winner");
+  winnerAnnouncement.textContent = "Idk";
+  
 
   updateChoicesUI("question", "question");
 }

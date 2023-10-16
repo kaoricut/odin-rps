@@ -102,6 +102,10 @@ body {
   height: 100px;
 }
 
+.announcements__choice--player {
+  transform: scaleX(-1);
+}
+
 .announcements__choices-wrapper {
   display: flex;
   align-items: center;

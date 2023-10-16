@@ -25,6 +25,44 @@ body {
   margin: 0 auto;
 }
 
+.game {
+  position: relative;
+}
+
+.dialog {
+  background-color: #D9D9D9;
+  width: 400px;
+  padding: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  border-radius: 14px;
+}
+
+.dialog::backdrop {
+  background: #000000;
+  opacity: 0.7;
+}
+
+.dialog__winner {
+  font-size: 40px;
+  color: #AF2D2D;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.dialog__text {
+  margin-bottom: 12px;
+}
+
+.dialog__button {
+  display: block;
+  width: 100%;
+}
+
 .header {
   margin-bottom: 60px;
 }

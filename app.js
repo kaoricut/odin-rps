@@ -38,7 +38,41 @@ function updateScoresUI(roundWinner) {
 }
 
 function endGame(winner) {
-  console.log(winner);
+  const modalDialog = document.querySelector(".dialog");
+  modalDialog.showModal();
+
+  const dialogWinner = document.querySelector(".js-dialog-winner");
+
+  switch (winner) {
+    case "player":
+      dialogWinner.textContent = `Congratulations, you win!`;
+      break;
+    case "computer":
+      dialogWinner.textContent = `Computer wins this time...`;
+      break;
+    default:
+      dialogWinner.textContent = "Something went wrong... please refresh the page";
+  }
+
+  modalDialog.addEventListener("close", (e) => {
+    if (!modalDialog.returnValue || modalDialog.returnValue === "restart") restartGame();
+  });
+}
+
+function restartGame() {
+  playerScore = 0;
+  computerScore = 0;
+
+  restartUI();
+}
+
+function restartUI() {
+  const playerScoreUI = document.querySelector(".js-player-score");
+  playerScoreUI.textContent = playerScore;
+  const computerScoreUI = document.querySelector(".js-computer-score");
+  computerScoreUI.textContent = computerScore;
+
+  updateChoicesUI("question", "question");
 }
 
 function updateChoicesUI(player, computer) {
